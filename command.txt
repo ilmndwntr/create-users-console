@@ -1,0 +1,17 @@
+# configure aws key id and secret
+$ aws configure
+
+# create users
+$ aws iam create-user --user-name (username)
+
+# see list groups
+$ aws iam list-groups
+
+# see policies groups
+$ aws iam list-attached-group-policies --group-name (group_name)
+
+# add users to group
+$ aws iam add-user-to-group --user-name (username) --group-name (group_name)
+
+# create login profile
+$ aws iam create-login-profile --user-name (username) --password (password)
